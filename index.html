@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel = "stylesheet"/>
+    <title>Namaz</title>
+</head>
+<body>
+    <div class="hat">
+
+<div class="navbar" width="200px" hight="300px">
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <i class="fa fa-caret-down">Город</i>
+      </button>
+      <div class="dropdown-content">
+        <a href="moscow.html">Москва</a>
+        <a href="kazan.html">Казань</a>
+        
+        <a href="Igefsc.html">Ижевск</a>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="down-hat">
+    <div class ="time">
+        <script type="text/javascript">
+            function getDate()
+            {
+                var date = new Date();
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                var seconds = date.getSeconds();
+                //По надобности условие ниже повторить с minutes и hours
+                if(seconds < 10)
+                {
+                    seconds = '0' + seconds;
+                }
+                document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+            }
+            setInterval(getDate, 0);
+            </script>
+            <div id="timedisplay"></div>
+    </div>
+    <div class="massanger">
+      <ul class="social-icons">
+        
+       
+        <li><a class="social-icon-vk" href="#" title="..." target="_blank" rel="noopener"></a></li>
+        <li><a class="social-icon-telegram" href="#" title="..." target="_blank" rel="noopener"></a></li>
+        <li><a class="social-icon-youtube" href="#" title="..." target="_blank" rel="noopener"></a></li>
+      </ul>
+    </div>
+    </div>
+    <br>
+    <br>
+<div class="cuastion">
+  <h2>Сначала укажите город</h2>
+</div>
+</body>
+</html>
